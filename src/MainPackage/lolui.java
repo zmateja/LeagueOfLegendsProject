@@ -1,8 +1,10 @@
+package MainPackage;
+
 import javax.swing.*;
 
 public class lolui extends JFrame {
-    JButton query  = new JButton("Find Summoner");
-
+    JButton query  = new JButton("Find MainPackage.Summoner");
+    JTextField search = new JTextField();
     public lolui(){
 
         super("LoL Stats Header");
@@ -11,6 +13,7 @@ public class lolui extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel panel = new JPanel();
+        panel.add(search);
         panel.add(query);
         add(panel);
     }
